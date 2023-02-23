@@ -6,8 +6,10 @@ public class Feldat {
     public static void main(String[] args) {
         int a = 0;
         int b = 0;
-        System.out.printf("%d + %d = %d\n",a, b, osszead(a, b));
-        System.out.println("AZ első 10 szám osszege: "+elso10SzamOsszege());
+        kiir(a+" + "+b+" = "+osszead(a, b));
+        System.out.println("");
+        kiir("AZ első 10 szám osszege: "+elso10SzamOsszege());
+        System.out.println("");
     }
 
     private static int osszead(int a, int b) {
@@ -24,7 +26,7 @@ public class Feldat {
     }
 
     private static void kiir(String szoveg) {
-        System.out.println(szoveg);
+        System.out.print(szoveg);
     }
     
 }
